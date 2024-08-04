@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "text";
+  src: url("../../../assets/fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf");
+}
+@font-face {
+  font-family: "text2";
+  src: url("../../../assets/fonts/Newsreader_24pt-ExtraLightItalic.ttf");
+}
+@font-face {
+  font-family: "text3";
+  src: url("../../../assets/fonts/Newsreader-VariableFont_opsz,wght.ttf");
+}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a {
+  font-family: "text2";
+  color: #000;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+::selection {
+  background-color: #426b1f;
+  color: #FFF;
+}
+
+@font-face {
+  font-family: "text";
+  src: url("../../../assets/fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf");
+}
+@font-face {
+  font-family: "text2";
+  src: url("../../../assets/fonts/Newsreader_24pt-ExtraLightItalic.ttf");
+}
+@font-face {
+  font-family: "text3";
+  src: url("../../../assets/fonts/Newsreader-VariableFont_opsz,wght.ttf");
+}
+@font-face {
+  font-family: "text";
+  src: url("../../../assets/fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf");
+}
+@font-face {
+  font-family: "text2";
+  src: url("../../../assets/fonts/Newsreader_24pt-ExtraLightItalic.ttf");
+}
+@font-face {
+  font-family: "text3";
+  src: url("../../../assets/fonts/Newsreader-VariableFont_opsz,wght.ttf");
+}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a {
+  font-family: "text2";
+  color: #000;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+::selection {
+  background-color: #426b1f;
+  color: #FFF;
+}
+
+header {
+  display: flex;
+  padding: 2em 7em;
+  width: 100%;
+}
+header h2 {
+  color: #426b1f;
+}
+header ul {
+  display: flex;
+  gap: 2.5em;
+  margin-left: 38em;
+}
+header ul li {
+  list-style: none;
+}
+header ul li:nth-child(5) {
+  background-color: #426b1f;
+  padding: 0.6em 1em;
+  border-radius: 10px;
+  margin-top: -0.6em;
+  color: #fff;
+}
+header ul li:nth-child(5) a {
+  color: #fff;
+}
+header ul li a {
+  color: #000;
+  font-family: "text3";
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 3em;
+  margin: auto;
+  text-align: center;
+  margin-top: 3em;
+  width: 50%;
+}
+
+.btn-shop {
+  font-family: "text3";
+  margin-left: 42rem;
+  background-color: #426b1f;
+  padding: 0.7em 1em;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #FFF;
+  margin-top: 2em;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+.btn-shop:hover {
+  background-color: #2F4D15;
+}
+
+.flex-img {
+  display: flex;
+  gap: 2em;
+  margin-left: 6%;
+  margin-top: 7.7em;
+}
+.flex-img img {
+  object-fit: cover;
+}
+.flex-img .flex-img-text img {
+  margin-top: 6.7em;
+}
+.flex-img .flex-img-text p {
+  margin-top: 0.7em;
+}
+
+.text-flex {
+  display: flex;
+  gap: 2.3em;
+  margin: 7.7em 4.4em;
+}
+.text-flex .title {
+  font-family: "text3";
+}
+.text-flex .text-description {
+  font-family: "text3";
+  width: 40%;
+  text-align: justify;
+}
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.not-found-text {
+  font-size: 2rem;
+  color: #426B1F;
+  transition: color 0.3s ease;
+}
+.not-found-text:hover {
+  color: #68894c;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+@font-face {
+  font-family: "text";
+  src: url("../../../assets/fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf");
+}
+@font-face {
+  font-family: "text2";
+  src: url("../../../assets/fonts/Newsreader_24pt-ExtraLightItalic.ttf");
+}
+@font-face {
+  font-family: "text3";
+  src: url("../../../assets/fonts/Newsreader-VariableFont_opsz,wght.ttf");
+}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a {
+  font-family: "text2";
+  color: #000;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+::selection {
+  background-color: #426b1f;
+  color: #FFF;
+}
+
+@font-face {
+  font-family: "text";
+  src: url("../../../assets/fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf");
+}
+@font-face {
+  font-family: "text2";
+  src: url("../../../assets/fonts/Newsreader_24pt-ExtraLightItalic.ttf");
+}
+@font-face {
+  font-family: "text3";
+  src: url("../../../assets/fonts/Newsreader-VariableFont_opsz,wght.ttf");
+}
+.product-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.product-card img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.flex-left-product-card {
+  flex: 1;
+  margin-left: 16px;
+}
+
+.flex-right-product-card {
+  margin-left: auto;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.flex-right-product-card .btn-buy {
+  padding: 8px 16px;
+  background-color: #426b1f;
+  color: #fff;
+  border: 1px solid #426b1f;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.flex-right-product-card .btn-buy:hover {
+  background-color: rgba(66, 107, 31, 0.2);
+  color: #000;
+}
+
+.App {
+  margin-top: 11em;
+}
+
+/*# sourceMappingURL=index.css.map */

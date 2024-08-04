@@ -1,0 +1,27 @@
+// src/styles/mixins/_media.scss
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == 'small' {
+      @media (max-width: 600px) { @content; }
+    } @else if $breakpoint == 'medium' {
+      @media (max-width: 900px) { @content; }
+    } @else if $breakpoint == 'large' {
+      @media (max-width: 1200px) { @content; }
+    }
+}
+
+@mixin borderBottom($pixel, $color) {
+  border-bottom: $pixel solid $color;
+}
+
+@mixin border($pixel, $color) {
+  border-bottom: $pixel solid $color;
+}
+
+@mixin flexGap($gap) {
+  display: flex;
+  gap: $gap;
+}
+
+@mixin btnHover() {
+  background-color: #2F4D15;
+}

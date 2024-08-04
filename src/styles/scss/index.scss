@@ -1,0 +1,9 @@
+@import './config/base';
+@import './config/fonts';
+@import './config/variables';
+@import './config/mixin';
+
+// COMPONENTS
+@import './modules/HomePage.scss';
+@import './modules/notFoundPage';
+@import './modules/shoppingCart';

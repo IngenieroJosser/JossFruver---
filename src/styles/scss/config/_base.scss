@@ -1,0 +1,23 @@
+@import './fonts';
+@import './variables';
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a {
+    font-family: 'text2';
+    color: #000;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: #FFF;
+}

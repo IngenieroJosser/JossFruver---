@@ -1,0 +1,55 @@
+@import '../config/base';
+@import '../config/variables';
+@import '../config/fonts';
+@import '../config/mixin';
+
+.product-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 8px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.product-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.flex-left-product-card {
+    flex: 1;
+    margin-left: 16px;
+}
+
+.flex-right-product-card {
+    margin-left: auto;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .btn-buy {
+        padding: 8px 16px;
+        background-color: $color-primary;
+        color: #fff;
+        border: 1px solid $color-primary;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: rgba(66, 107, 31, .2);
+            color: #000;
+        }
+    }
+}
+
+.App {
+    margin-top: 11em;
+}

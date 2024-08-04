@@ -1,0 +1,23 @@
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; // Fondo claro para la página
+}
+  
+.not-found-text {
+    font-size: 2rem;
+    color: #426B1F; // Color original del texto
+    transition: color 0.3s ease; // Transición suave para el color
+  
+    &:hover {
+      color: #68894c; // Color más claro al pasar el cursor
+      // Si prefieres un color más oscuro, usa esta línea en lugar de la anterior:
+      // color: #355619;
+    }
+}
+  
+body {
+    background-color: #f8f9fa;
+}

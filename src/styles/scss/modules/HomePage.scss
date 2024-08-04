@@ -1,0 +1,100 @@
+@import '../config/variables';
+@import '../config/base';
+@import '../config/mixin';
+
+header {
+    display: flex;
+    padding: 2em 7em;
+    width: 100%;
+
+    h2 {
+        color: $color-primary;
+    }
+
+    ul {
+        display: flex;
+        gap: 2.5em;
+        margin-left: 38em;
+
+        li {
+            list-style: none;
+            &:nth-child(5) {
+                background-color: $color-primary;
+                padding: .6em 1em;
+                border-radius: 10px;
+                margin-top: -.6em;
+                color: #fff;
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            a {
+                color: #000;
+                font-family: 'text3';
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+    margin-top: 3em;
+    width: 50%;
+}
+
+.btn-shop {
+    font-family: 'text3';
+    margin-left: 42rem;
+    background-color: $color-primary;
+    padding: .7em 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 2em;
+    position: absolute;
+    transition: all ease-in-out .3s;
+
+    &:hover {
+        @include btnHover;
+    }
+}
+
+.flex-img {
+    @include flexGap(2em);
+    margin-left: 6%;
+    margin-top: 7.7em;
+
+    img {
+        object-fit: cover;
+    }
+
+    .flex-img-text {
+        img {
+            margin-top: 6.7em;
+        }
+
+        p {
+            margin-top: .7em;
+        }
+    }
+}
+
+.text-flex {
+    @include flexGap(2.3em);
+    margin: 7.7em 4.4em;
+
+    .title {
+        font-family: 'text3';
+    }
+
+    .text-description {
+        font-family: 'text3';
+        width: 40%;
+        text-align: justify;
+    }
+}

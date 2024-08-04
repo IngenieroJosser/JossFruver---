@@ -1,0 +1,40 @@
+@import '../config/variables';
+@import '../config/base';
+@import '../config/mixin';
+
+header {
+    display: flex;
+    padding: 2em 7em;
+    width: 100%;
+
+    h2 {
+        color: $color-primary;
+    }
+
+    ul {
+        display: flex;
+        gap: 2.5em;
+        margin-left: 38em;
+
+        li {
+            list-style: none;
+            &:nth-child(5) {
+                background-color: $color-primary;
+                padding: .6em 1em;
+                border-radius: 10px;
+                margin-top: -.6em;
+                color: #fff;
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            a {
+                color: #000;
+                font-family: 'text3';
+                font-size: 14px;
+            }
+        }
+    }
+}
