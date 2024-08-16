@@ -14,7 +14,7 @@ header {
     ul {
         display: flex;
         gap: 2.5em;
-        margin-left: 38em;
+        margin-left: auto;
 
         li {
             list-style: none;
@@ -44,57 +44,109 @@ h1 {
     margin: auto;
     text-align: center;
     margin-top: 3em;
-    width: 50%;
+    width: 80%;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2em;
+        width: 90%;
+    }
 }
 
 .btn-shop {
     font-family: 'text3';
-    margin-left: 42rem;
     background-color: $color-primary;
     padding: .7em 1em;
     border-radius: 5px;
     font-weight: bold;
     color: #FFF;
     margin-top: 2em;
-    position: absolute;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    width: fit-content;
     transition: all ease-in-out .3s;
 
     &:hover {
         @include btnHover;
     }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 1.5em;
+    }
 }
 
 .flex-img {
-    @include flexGap(2em);
+    display: flex;
+    gap: 2em;
     margin-left: 6%;
     margin-top: 7.7em;
 
     img {
         object-fit: cover;
+        width: 100%;
     }
 
     .flex-img-text {
+        display: flex;
+        flex-direction: column;
+
         img {
             margin-top: 6.7em;
+            width: 100%;
         }
 
         p {
             margin-top: .7em;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin-left: 4%;
+        margin-top: 3em;
+
+        .flex-img-text {
+            img {
+                margin-top: 2em;
+            }
         }
     }
 }
 
 .text-flex {
-    @include flexGap(2.3em);
+    display: flex;
+    flex-direction: column;
+    gap: 2.3em;
     margin: 7.7em 4.4em;
 
     .title {
         font-family: 'text3';
+        font-size: 2em;
+        text-align: center;
     }
 
     .text-description {
         font-family: 'text3';
-        width: 40%;
+        width: 100%;
         text-align: justify;
+        line-height: 1.8em;
+        margin-top: 1.5em;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 4em 2em;
+
+        .title {
+            font-size: 1.5em;
+        }
+
+        .text-description {
+            font-size: 0.9em;
+            line-height: 1.6em;
+        }
     }
 }

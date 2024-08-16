@@ -5,20 +5,54 @@
 
 .flex-b-items {
     display: flex;
+    align-items: center;
     gap: 1em;
-    margin-left: 13.8em;
-    margin-top: -12em;
+    margin: 0 auto; // Centra el contenedor horizontalmente
+    width: 80%; // Ajusta el ancho en pantallas grandes
+    max-width: 600px; // Ancho máximo para evitar que se expanda demasiado
+    padding: 1em; // Padding general
+
     @include borderBottom(1px, #000);
-    width: 40%;
+    margin-bottom: 2em;
 
     .text-basket {
-        margin-left: -1.8em;
+        flex: 1;
+        font-size: 1.5em; // Ajusta el tamaño de fuente para adaptarse a pantallas grandes
+        text-align: left;
     }
-    
 
     .text-items {
-        margin-left: 10em;
-        margin-top: 10.4em;
-        position: absolute;
-    }    
+        font-size: 1.2em; // Ajusta el tamaño de fuente para adaptarse a pantallas grandes
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-b-items {
+        flex-direction: column; // Cambia la dirección del layout a columna en pantallas pequeñas
+        align-items: flex-start; // Alinea los elementos al principio
+        gap: 0.5em; // Reduce el espacio entre elementos
+
+        width: 90%; // Ajusta el ancho en pantallas pequeñas
+
+        .text-basket, .text-items {
+            font-size: 1.2em; // Ajusta el tamaño de fuente para pantallas pequeñas
+        }
+
+        .text-items {
+            margin-top: 0; // Elimina el margen superior en pantallas pequeñas
+            text-align: left; // Cambia la alineación del texto
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flex-b-items {
+        width: 100%; // Ajusta el ancho en pantallas muy pequeñas
+        padding: 0.5em; // Reduce el padding en pantallas muy pequeñas
+
+        .text-basket, .text-items {
+            font-size: 1em; // Ajusta el tamaño de fuente para pantallas muy pequeñas
+        }
+    }
 }

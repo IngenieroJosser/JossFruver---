@@ -12,44 +12,141 @@
     border-radius: 8px;
     width: 70%;
     margin-left: 15%;
-}
+    transition: all 0.3s ease;
 
-.product-card img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-}
+    img {
+        width: 150px;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+        flex-shrink: 0; // Evita que la imagen se reduzca en tamaños pequeños
+    }
 
-.flex-left-product-card {
-    flex: 1;
-    margin-left: 16px;
-}
+    .flex-left-product-card {
+        flex: 1;
+        margin-left: 16px;
 
-.flex-right-product-card {
-    margin-left: auto;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
 
-    .btn-buy {
-        padding: 8px 16px;
-        background-color: $color-primary;
-        color: #fff;
-        border: 1px solid $color-primary;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
+        span {
+            font-size: 1em;
+            color: rgba(66, 17, 31, .6); // Aumenta la visibilidad del texto
+        }
+    }
 
-        &:hover {
-            background-color: rgba(66, 107, 31, .2);
-            color: #000;
+    .flex-right-product-card {
+        margin-left: auto;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        text-align: right;
+
+        p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .btn-buy {
+            padding: 8px 16px;
+            background-color: $color-primary;
+            color: #fff;
+            border: 1px solid $color-primary;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: rgba(66, 107, 31, .2);
+                color: #000;
+            }
         }
     }
 }
 
-.App {
-    margin-top: 11em;
+@media screen and (max-width: 768px) {
+    .product-card {
+        flex-direction: column; // Cambia la dirección del layout a columna en pantallas pequeñas
+        align-items: stretch; // Alinea los elementos para que ocupen todo el ancho
+        padding: 12px;
+        width: 90%;
+        margin-left: 5%;
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 16px; // Agrega margen inferior para separar la imagen del contenido
+        }
+
+        .flex-left-product-card {
+            margin-left: 0;
+            width: 100%;
+
+            h3 {
+                font-size: 1.5em;
+            }
+
+            span {
+                font-size: 1.1em;
+            }
+        }
+
+        .flex-right-product-card {
+            margin-left: 0;
+            width: 100%;
+            flex-direction: row; // Mantiene el precio y el botón en fila
+            justify-content: space-between; // Distribuye el espacio entre los elementos
+
+            p {
+                font-size: 1.3em;
+            }
+
+            .btn-buy {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-card {
+        padding: 10px;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 6px;
+
+        img {
+            margin-bottom: 12px;
+            width: 17em;
+            height: 17em;
+            border-radius: 11px;
+            margin-left: 2em;
+        }
+
+        .flex-left-product-card {
+            h3 {
+                font-size: 1.3em;
+            }
+
+            span {
+                font-size: 1em;
+            }
+        }
+
+        .flex-right-product-card {
+            p {
+                font-size: 1.1em;
+            }
+
+            .btn-buy {
+                font-size: 0.9em;
+                padding: 8px 16px;
+            }
+        }
+    }
 }
